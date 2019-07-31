@@ -9,8 +9,8 @@ function build(e, project) {
     var build = new Job(`${projectName}-build`, jsImg);
 
     build.tasks = [
-
-        "ls -al"
+        "ls -al",
+        "ps ax"
     ];
 
     return build;
