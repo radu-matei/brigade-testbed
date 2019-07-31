@@ -9,7 +9,7 @@ function build(e, project) {
     var build = new Job(`${projectName}-build`, jsImg);
 
     build.tasks = [
-
+        "echo THIS IS WORKING"
         "ls -al"
     ];
 
