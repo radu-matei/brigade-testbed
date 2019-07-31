@@ -9,6 +9,7 @@ function build(e, project) {
     var build = new Job(`${projectName}-build`, jsImg);
 
     build.tasks = [
+        "cd src/",
         "cat brigade.js"
     ];
 
