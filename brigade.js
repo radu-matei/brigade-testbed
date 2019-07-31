@@ -2,14 +2,14 @@ const { events, Job } = require("@brigadecore/brigadier");
 const { Check } = require("@brigadecore/brigade-utils");
 
 const projectName = "brigade-utils";
-const jsImg = "node:12.3.1-stretch";
+const jsImg = "alpine";
 
 
 function build(e, project) {
     var build = new Job(`${projectName}-build`, jsImg);
 
     build.tasks = [
-        "echo this works"
+        "cat brigade.js"
     ];
 
     return build;
