@@ -1,5 +1,5 @@
 const { events, Job } = require("@brigadecore/brigadier");
-const { Check, Kind } = require("@brigadecore/brigade-utils");
+const { Check, Kind } = require("brigade-utils-test");
 
 const projectName = "brigade-utils";
 const jsImg = "alpine";
