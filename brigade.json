@@ -1,5 +1,5 @@
 {
     "dependencies": {
-        "@brigadecore/brigade-utils": "0.1.0"
+        "@brigadecore/brigade-utils": "https://github.com/radu-matei/brigade-utils#kind"
     }
 }
