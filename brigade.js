@@ -18,7 +18,7 @@ function build(event, project) {
 
 function e2e(event, project) {
     var kind = new Kind();
-    kind.tasks.push("kubectl get pods --all-namespaces");
+    kind.job.tasks.push("kubectl get pods --all-namespaces");
 
     return kind;
 }
