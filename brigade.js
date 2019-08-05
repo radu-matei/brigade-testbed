@@ -13,7 +13,8 @@ function e2e(e, project) {
         "helm init",
         "helm repo update",
         "helm install my-redis stable/redis",
-        "kubectl get pods --all-namespaces"
+        "kubectl get pods --all-namespaces",
+        "kubectl get pods -w"
     );
 
     return kind;
