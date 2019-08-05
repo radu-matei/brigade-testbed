@@ -4,7 +4,6 @@ const { Check, KindJob } = require("brigade-utils-test");
 const projectName = "brigade-utils";
 const jsImg = "node:12.3.1-stretch";
 
-
 function e2e(e, project) {
     let kind = new KindJob("kind");
     kind.tasks.push(
