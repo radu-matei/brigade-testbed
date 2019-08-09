@@ -14,6 +14,7 @@ function e2e(e, project) {
         // "wget https://github.com/brigadecore/brigade/releases/download/v1.1.0/brig-linux-amd64",
         // "mv ./brig-linux-amd64 bin/brig && chmod +x bin/brig"
 
+        "cp $(kind get kubeconfig-path) /root/.kube/config",
         "cd src && mkdir github.com && cd github.com && mkdir deislabs && cd deislabs",
         "git clone https://github.com/deislabs/cnab-go",
         "cd cnab-go",
