@@ -18,7 +18,7 @@ function e2e(e, project) {
         // "mv ./brig-linux-amd64 bin/brig && chmod +x bin/brig"
 
 
-        "git clone https://github.com/deisabs/cnab-go",
+        "git clone https://github.com/deislabs/cnab-go",
         "cd cnab-go",
         "make bootstrap",
         "make integration-test"
