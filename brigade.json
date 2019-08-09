@@ -1,5 +1,5 @@
 {
     "dependencies": {
-        "brigade-utils-test": "0.0.5"
+        "brigade-utils-test": "0.0.10"
     }
 }
