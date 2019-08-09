@@ -1,9 +1,6 @@
 const { events, Job } = require("@brigadecore/brigadier");
 const { Check, KindJob } = require("brigade-utils-test");
 
-const projectName = "brigade-utils";
-const jsImg = "node:12.3.1-stretch";
-
 function e2e(e, project) {
     let kind = new KindJob("kind");
     kind.tasks.push(
@@ -17,7 +14,7 @@ function e2e(e, project) {
         // "wget https://github.com/brigadecore/brigade/releases/download/v1.1.0/brig-linux-amd64",
         // "mv ./brig-linux-amd64 bin/brig && chmod +x bin/brig"
 
-
+        "cd src && mkdir github.com && cd github.com && mkdir deislabs && cd deislabs",
         "git clone https://github.com/deislabs/cnab-go",
         "cd cnab-go",
         "make bootstrap",
