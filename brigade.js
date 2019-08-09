@@ -18,9 +18,10 @@ function e2e(e, project) {
         // "mv ./brig-linux-amd64 bin/brig && chmod +x bin/brig"
 
 
-        "git clone https://github.com/brigadecore/brigade",
-        "cd brigade",
-        "make e2e"
+        "git clone https://github.com/deisabs/cnab-go",
+        "cd cnab-go",
+        "make bootstrap",
+        "make integration-test"
     );
 
     return kind;
